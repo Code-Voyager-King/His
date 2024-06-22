@@ -6,7 +6,7 @@ mybatis:
     mapper-locations: classpath:mappers/*.xml
     type-aliases-package: com.hmc.his.model
 pulsar:
-    url: localhost:6650
+    url: host.docker.internal:6650
 spring:
     data:
         redis:
@@ -17,7 +17,9 @@ spring:
             timeout: 5s
     datasource:
         password: pkq210210
-        url: jdbc:mysql://localhost:3306/his?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
+        url: jdbc:mysql://host.docker.internal:3306/his?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=true&serverTimezone=GMT%2B8
         username: root
     profiles:
         active: prod
+server:
+    port: 81
