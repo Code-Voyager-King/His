@@ -1,7 +1,6 @@
 package com.hmc.his.controller;
 
 import com.hmc.his.model.Doctor;
-import com.hmc.his.model.Patient;
 import com.hmc.his.service.DoctorService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;

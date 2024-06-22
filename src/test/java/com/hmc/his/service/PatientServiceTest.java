@@ -16,12 +16,34 @@ class PatientServiceTest {
     @Autowired
     private PatientService patientService;
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     @Test
     @Order(1)
     void addPatients() {
         int i = patientService.addPatients(new Patient(999,"测试999","病房999号","地址杭州医学院","331023200645699",18));
         assertEquals(1, i);
     }
+
+
+
+
+
 
     @Test
     @Order(2)

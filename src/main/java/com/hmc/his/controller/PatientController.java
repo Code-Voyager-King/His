@@ -133,41 +133,6 @@ public class PatientController {
         return "9";
     }
 
-    @GetMapping("10")
-    public String get10(){
-        return "10";
-    }
-
-    @GetMapping("11")
-    public String get11(){
-        return "11";
-    }
-
-    @GetMapping("12")
-    public String get12(){
-        return "12";
-    }
-
-    @GetMapping("13")
-    public String get13(){
-        return "13";
-    }
-
-    @GetMapping("14")
-    public String get14(){
-        return "14";
-    }
-
-    @GetMapping("15")
-    public String get15(){
-        return "15";
-    }
-
-    @GetMapping("16")
-    public String get16(){
-        return "16";
-    }
-
     @GetMapping("patients/department/{department}")
     public Patient getPatient(@PathVariable("department") String department){
         return patientService.getPatient(department);
