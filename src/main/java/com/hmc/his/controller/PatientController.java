@@ -82,57 +82,6 @@ public class PatientController {
         return data;
     }
 
-    @GetMapping("hello")
-    public String getHello(){
-        System.out.println("hello word!");
-        return "hello";
-    }
-
-    @GetMapping("1")
-    public String get1(){
-        return "1";
-    }
-
-    @GetMapping("2")
-    public String get2(){
-        return "2";
-    }
-
-    @GetMapping("3")
-    public String get3(){
-        return "3";
-    }
-
-    @GetMapping("4")
-    public String get4(){
-        return "4";
-    }
-
-    @GetMapping("5")
-    public String get5(){
-        return "5";
-    }
-
-    @GetMapping("6")
-    public String get6(){
-        return "6";
-    }
-
-    @GetMapping("7")
-    public String get7(){
-        return "7";
-    }
-
-    @GetMapping("8")
-    public String get8(){
-        return "8";
-    }
-
-    @GetMapping("9")
-    public String get9(){
-        return "9";
-    }
-
     @GetMapping("patients/department/{department}")
     public Patient getPatient(@PathVariable("department") String department){
         return patientService.getPatient(department);

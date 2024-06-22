@@ -4,11 +4,10 @@ import com.hmc.his.model.Department;
 import org.apache.ibatis.annotations.*;
 import org.springframework.stereotype.Repository;
 
-
 import java.util.List;
 @Mapper
 @Repository
-public interface DepartmentsRepository {
+public interface DepartmentRepository {
     List<Department> selectDepartments();
 
     @Select("select departmentId from department")

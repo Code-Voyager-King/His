@@ -10,10 +10,11 @@ import java.util.List;
 @Slf4j
 @RestController
 public class DepartmentsController {
-    private DepartmentService departmentService;
+    private final DepartmentService departmentService;
     public DepartmentsController(DepartmentService departmentService){
         this.departmentService=departmentService;
     }
+
     @GetMapping("departments")
     public List<Department>  getDepartments(){
         return departmentService.getDepartments();
@@ -45,7 +46,7 @@ public class DepartmentsController {
     }
 
     @DeleteMapping("departments/{id}")
-    public int removeDepartments(@PathVariable Integer id){
+    public int removeDepartments(@PathVariable("id") Integer id){
         return departmentService.removeDepartments(id);
     }
 
