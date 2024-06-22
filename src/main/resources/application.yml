@@ -8,6 +8,11 @@ mybatis:
 pulsar:
     url: host.docker.internal:6650
 spring:
+    security:
+        user:
+            name: admin
+            password: admin
+            roles: ADMIN
     data:
         redis:
             connect-timeout: 5s

@@ -21,3 +21,19 @@ mybatis:
   type-aliases-package: com.hmc.his.model
 server:
   port: 8001
+management:
+    server:
+      port: 9001
+    endpoints:
+      web:
+        exposure:
+          include: '*'
+    endpoint:
+      health:
+        show-details: always
+      shutdown:
+        enabled: true
+      env:
+        show-values: always
+      logfile:
+        enabled: true
